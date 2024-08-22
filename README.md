@@ -1,6 +1,7 @@
 # Figure One Lab-internship
 # Exploring the Potential Application of FDA-Approved Antibody Therapies Trastuzumab and Bevacizumab in Additional Cancers
 ## The KSQ: Using available scRNA-seq data from cancer cell lines, how would you explore using the following FDA-approved antibody therapies in additional cancers?
+## Praphrased KSQ: Given the available single-cell RNA sequencing (scRNA-seq) data from various cancer cell lines, how would I investigate the potential application of the following FDA-approved antibody therapies in treating other types of cancers? 
 
 First, I will start by explaining a few important terms:
 
