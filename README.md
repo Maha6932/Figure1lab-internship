@@ -1,6 +1,4 @@
-# Figure1lab-internship
-Figure 1 lab internship
-
+# Figure One Lab-internship
 # Exploring the Potential Application of FDA-Approved Antibody Therapies Trastuzumab and Bevacizumab in Additional Cancers
 ## The KSQ: Using available scRNA-seq data from cancer cell lines, how would you explore using the following FDA-approved antibody therapies in additional cancers?
 
@@ -36,21 +34,100 @@ Signaling pathways activated by HER2 include:
 - phospholipase C γ
 - protein kinase C (PKC)
 - Signal transducer and activator of transcription (STAT)
+  
 In summary, signaling through the ErbB family of receptors promotes cell proliferation and opposes apoptosis, and therefore must be tightly regulated to prevent uncontrolled cell growth from occurring.
 
 #### VEGF (Vascular endothelial growth factor)
 - VEGF is a protein that plays a critical role in the process of angiogenesis, which is the formation of blood vessels. VEGF stimulates the growth of blood vessels by promoting the proliferation and migration of endothelial cells, which line the interior surface of the blood vessel.
 - VEGF is particularly important in normal physiological processes like wound healing and the formation of the vascular system during embryonic development, however, it also plays a role in pathological conditions such as cancer.
 - Tumors can secrete VEGF to promote the growth of new blood vessels that supply tumors with oxygen and nutrients, facilitating tumor growth and metastasis.
-- VEGF-A has been implicated with poor prognosis in breast cancer. Numerous studies show a decreased overall survival and disease-free survival in those tumors overexpressing VEGF. The overexpression of VEGF-A may be an early step in the process of metastasis, a step that is involved in the "angiogenic" switch.
+- VEGF-A has been implicated with poor prognosis in breast cancer. Numerous studies show a decreased overall survival and disease-free survival in those tumors overexpressing VEGF. The overexpression of VEGF-A may be an early step in the metastasis process, a step involved in the "angiogenic" switch.
 - Because of its role in cancer, VEGF is a target for anti-angiogenic therapies. Drugs like bevacizumab are designed to inhibit VEGF activity, thereby preventing the growth of blood vessels that tumors need to grow and spread.
 
 ## Understanding the mechanism of action of the given two antibodies: Trastuzumab and Bevacizumab
 #### TRASTUZUMAB
-Trastuzumab, sold under the brand name Herceptin among others, is a monoclonal antibody used to treat breast cancer and stomach cancer. It is specifically used for cancer that is HER2 receptor-positive. It may be used by itself or together with other chemotherapy medication. Trastuzumab is given by slow injection into a vein and injection just under the skin.
+- Trastuzumab, sold under the brand name Herceptin among others, is a monoclonal antibody used to treat breast cancer and stomach cancer. It is specifically used for cancer that is HER2 receptor-positive. It may be used by itself or together with other chemotherapy medication. Trastuzumab is given by slow injection into a vein and injection just under the skin.
+- Efficacy: Studies have shown that trastuzumab-containing therapies improve survival outcomes. The hazard ratios (HR) indicate how much the treatment reduces the risk of death or disease progression:
+          Overall Survival (OS): HR = 0.82, meaning an 18% reduction in the risk of death compared to the control group.
+          Progression-Free Survival (PFS): HR = 0.61, meaning a 39% reduction in the risk of the disease worsening.
+- Improved Survival: Trastuzumab-containing treatments significantly improve survival:
+          Overall Survival: HR = 0.66, meaning a 34% reduction in the risk of death.
+          Disease-Free Survival: HR = 0.60, meaning a 40% reduction in the risk of cancer recurrence.
+- Cardiac Risks: There is an increased risk of heart-related side effects:
+          Heart Failure: The risk is more than five times higher than in patients not receiving trastuzumab (RR = 5.11).
+          Decline in Heart Function: A nearly doubled risk of reduced left ventricular ejection fraction (RR = 1.83).
+- Shorter vs. Longer Treatment: Shorter treatment regimens of trastuzumab were found to be as effective as longer ones but caused less heart toxicity.
 
+- Impact on Survival in Late-Stage Cancer:
+          Metastatic Breast Cancer: Trastuzumab has been shown to extend the survival of patients with advanced HER2-positive breast cancer, from 20.3 months to 25.1 months.
+          Early-Stage Cancer Benefits: In early-stage HER2-positive breast cancer, trastuzumab reduces the chance of the cancer returning after surgery. Over three years:
+          Reduction in Recurrence: The risk of cancer coming back was reduced by 9.5%.
+          Reduction in Death Risk: The risk of death was reduced by 3%.
+- Cardiac Toxicity: While trastuzumab increases the risk of serious heart problems by 2.1%, these issues may be resolved if treatment is discontinued.
+- Combination with Chemotherapy:
+          Increased Survival and Response: When combined with chemotherapy, trastuzumab improves both the survival rate and the effectiveness of the treatment compared to using 
+          trastuzumab alone.
+- Tumor Testing (erbB2 Status):
+          Eligibility for Treatment: Tumors can be tested for erbB2 (also known as HER2) status. If a tumor overexpresses HER2 and the patient does not have significant heart disease, 
+          they can be treated with trastuzumab.
 
+#### Trastuzumab's Mechanism of Action:
 
+Targeting HER2: Trastuzumab is a monoclonal antibody designed to specifically target the HER2 protein. It works by binding to HER2, which triggers an immune response against the cancer cells. This binding also leads to the internalization and recycling of HER2, reducing its presence on the cell surface.
+
+Impact on Cell Cycle: Trastuzumab may increase the levels of cell cycle inhibitors like p21Waf1 and p27Kip1, which help slow down or stop cell division.
+
+#### HER2 Pathway and Cancer:
+Normal Function: In healthy cells, the HER2 pathway helps regulate normal cell growth and division. However, when HER2 is overexpressed, it causes cells to grow and divide uncontrollably, leading to cancer.
+
+HER Family Receptors: The HER family includes four receptors—HER1 (EGFR), HER2, HER3, and HER4. When certain molecules (ligands) bind to these receptors, they activate pathways that promote cell growth and survival, like the MAP kinase pathway and the PI3 kinase/AKT pathway.
+Overexpression of HER2 in Cancer:
+
+Overexpression: In some cancer cells, the HER2 protein can be expressed up to 100 times more than in normal cells, driving rapid tumor growth.
+Dimerization and Signaling: HER2 receptors on the cell surface can pair up (dimerize) with other HER receptors, leading to stronger and longer-lasting signals that promote cancer cell growth and blood vessel formation (angiogenesis).
+
+#### Trastuzumab's Effects on HER2 Signaling:
+
+Binding to HER2: Trastuzumab binds to a specific part (domain IV) of the HER2 receptor on the cell surface. This binding can reverse the cancerous behavior of cells that overexpress HER2.
+
+Cell Cycle Arrest: Trastuzumab causes cancer cells to stop dividing by arresting them in the G1 phase of the cell cycle, reducing their proliferation.
+
+Inhibition of AKT Activation: Trastuzumab downregulates the activation of AKT, a protein involved in promoting cell survival and growth.
+
+Inhibition of Angiogenesis: Trastuzumab also suppresses the formation of new blood vessels that feed tumors by affecting various factors involved in angiogenesis.
+
+#### Immune-Mediated Effects:
+
+Antibody-Dependent Cell-Mediated Cytotoxicity (ADCC): Trastuzumab can recruit immune cells to attack and kill the cancer cells it binds to, through a process known as ADCC.
+Trastuzumab and Resistance:
+
+#### BEVACIZUMAB
+Bevacizumab, also known by its brand name Avastin, is a monoclonal antibody that targets and inhibits vascular endothelial growth factor A (VEGF-A). VEGF-A is a key protein responsible for promoting the growth of new blood vessels (angiogenesis). Bevacizumab is used in the treatment of various cancers, including colorectal cancer, lung cancer, glioblastoma, renal cell carcinoma, and certain types of ovarian and cervical cancers. It is often used in combination with other chemotherapeutic agents.
+
+The mechanism of action of bevacizumab can be broken down as follows:
+
+#### Mechanism of Action of Bevacizumab
+Targeting VEGF-A:
+VEGF-A is a protein that plays a critical role in angiogenesis, which is the process of forming new blood vessels. This is essential for normal growth and development but is also exploited by tumors to ensure they have an adequate blood supply to grow and spread (metastasize).
+Bevacizumab is designed to specifically bind to VEGF-A, preventing it from interacting with its receptors on the surface of endothelial cells (the cells that line blood vessels).
+
+Inhibition of Angiogenesis:
+By binding to VEGF-A, bevacizumab blocks the signal that would normally stimulate endothelial cells to form new blood vessels. Without the formation of new blood vessels, tumors are starved of the necessary nutrients and oxygen needed for growth.
+This inhibition of angiogenesis not only restricts tumor growth but can also prevent the spread of cancer to other parts of the body.
+
+Tumor Growth and Metastasis Suppression:
+Tumors rely heavily on the formation of new blood vessels to support their growth. By cutting off the blood supply through the inhibition of VEGF-A, bevacizumab can reduce tumor size and limit metastasis.
+Additionally, bevacizumab can enhance the effectiveness of other cancer treatments (like chemotherapy or radiation) by normalizing the abnormal blood vessels in tumors, improving the delivery of these therapies to the tumor cells.
+
+Impact on Existing Blood Vessels:
+Bevacizumab also affects existing blood vessels within tumors, making them more stable and less leaky. This can reduce the pressure inside tumors (interstitial pressure), improving the delivery of chemotherapeutic drugs.
+
+#### With this literature review, we have understood the mechanism of action of both drugs so now, we can look for other cancers that share similar pathways or express the same target antigens that the antibody therapy is designed to act upon.
+
+## Questions and Interesting Things noticed
+1. While doing my literature search, I found that many patients who took Trastuzumab developed resistance to the drug later, so how do we tackle this drawback with this drug?
+2.  One observation that I would like to put down is that: Both drugs contribute to inhibiting angiogenesis, thereby starving the tumor of its blood supply and nutrients. Bevacizumab directly targets the angiogenesis process through VEGF-A, whereas trastuzumab primarily targets the HER2 receptor, with angiogenesis inhibition as a secondary effect.
+ 
 ## References
 1. https://www.mdpi.com/2072-6694/11/8/1098
 2. https://en.wikipedia.org/wiki/Single-cell_sequencing
@@ -58,8 +135,10 @@ Trastuzumab, sold under the brand name Herceptin among others, is a monoclonal a
 4. https://en.wikipedia.org/wiki/HER2
 5. https://en.wikipedia.org/wiki/Vascular_endothelial_growth_factor
 6. https://www.sciencedirect.com/science/article/pii/S1044579X22000670
-7. https://en.wikipedia.org/wiki/Trastuzumab#:~:text=Trastuzumab%20works%20by%20binding%20to%20the,HER2%20receptor%20and%20slowing%20down%20cell%20replication.
-
+8. https://en.wikipedia.org/wiki/Trastuzumab
+9. https://www.cancer.gov/about-cancer/treatment/drugs/bevacizumab
+10. https://en.wikipedia.org/wiki/Bevacizumab
+    
 
 
 
