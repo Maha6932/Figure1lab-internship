@@ -139,7 +139,37 @@ Bevacizumab also affects existing blood vessels within tumors, making them more 
 8. https://en.wikipedia.org/wiki/Trastuzumab
 9. https://www.cancer.gov/about-cancer/treatment/drugs/bevacizumab
 10. https://en.wikipedia.org/wiki/Bevacizumab
-    
+
+
+# WEEK 2 MEMO - Read the Paper
+#### 1. How did the authors handle the potential caveat of co-culturing cell lines before profiling by scRNA-seq? Why do you think that caveat was or was not adequately addressed?
+The authors handled the potential caveat of co-culturing cell lines before profiling by single-cell RNA sequencing (scRNA-seq) by first using separate and Consistent Pools; The study involved profiling cells from different cell lines pooled together. However, these cell lines were chosen based on similar proliferation rates. They were derived from diverse lineages, reducing the likelihood of significant inter-line competition or cross-interaction affecting gene expression patterns.
+Second, Control Experiments with and without Co-culture; To directly assess the impact of co-culturing, the authors performed control experiments in which six cell lines were profiled with and without being co-cultured for three days. These experiments showed that co-culturing had only a modest effect on the average gene expression of each cell line. More importantly, the patterns of heterogeneity within each cell line remained highly consistent regardless of co-culturing.
+Third, Genetic and Expression-Based Assignment of Cells; To ensure accurate cell line identification, the authors used gene expression profiles and single-nucleotide polymorphisms (SNPs) detected in the scRNA-seq reads. This dual approach allowed them to confidently assign cells to their respective cell lines and exclude those with inconsistent assignments, primarily due to low data quality.
+Fourth, Comparative Analysis Across Pools; The study found that patterns of heterogeneity were as similar between cell lines from the same co-cultured pool as they were between cell lines from different pools. This finding suggests that the co-culture environment did not introduce significant batch effects that could alter the inherent heterogeneity patterns of the individual cell lines.
+
+#### Whether the Caveat Was Adequately Addressed?
+The authors did handle the caveat adequately, the combination of control experiments, rigorous cell line assignment methods, and comparative analyses indicates that the authors took significant steps to address the caveat of co-culturing. By demonstrating that the heterogeneity patterns were consistent with and without co-culturing and by confirming cell identity through SNPs and gene expression, the authors minimized the potential impact of co-culture on their findings. 
+Though they have handled it properly, there are a few limitations, The modest effect observed on average gene expression due to co-culturing suggests that subtle changes might still occur, potentially influencing low-abundance transcripts or specific stress-response pathways. Additionally, even with the control experiments, co-culture conditions might introduce interactions that are challenging to fully replicate or control for, given the complexity of cell signaling and microenvironmental factors.
+        
+#### 2. The authors identified discrete subpopulations of cells within a subset of individual cell lines (Fig. 2A-B). What might be the reason why some cell lines have these discrete subpopulations while others do not?
+The presence or absence of discrete subpopulations in cell lines is likely influenced by a combination of genetic, epigenetic, and environmental factors. Cell lines that exhibit more intrinsic genetic diversity, greater cellular plasticity, or have been subject to specific selective pressures (either during tumor development or in culture) are more likely to harbor distinct subpopulations. In contrast, cell lines that are more genetically or epigenetically uniform or have less capacity for differentiation and adaptation may not exhibit such heterogeneity. 
+#### 3. What are Recurrent Heterogeneous Programs (RHPs) and how were they defined?
+Recurrent Heterogeneous Programs (RHPs) are gene expression patterns or transcriptional programs that are consistently observed across multiple cancer cell lines and tumor types, indicating their fundamental role in cancer biology. RHPs represent cellular states that vary within a population of cancer cells, contributing to intra-tumor heterogeneity (ITH). These programs are involved in key biological processes, such as proliferation, stress responses, epithelial-mesenchymal transition (EMT), immune response, and senescence, which are crucial for cancer development, metastasis, and response to therapy. RHPs can be thought of as sets of genes that are co-expressed and exhibit variability in their expression levels within a population of cells, suggesting that different subpopulations of cells within the same tumor or cell line might activate different programs at different times. This variability allows the tumor to adapt to various microenvironmental conditions and therapeutic pressures, thus playing a role in drug resistance and disease progression.
+
+They were identified through single-cell RNA sequencing and computational analysis using methods like non-negative matrix factorization (NMF), clustering, and cross-sample comparison, mainly it's the NMF which is a computational technique, to decompose the gene expression matrix into a set of underlying factors, or programs. NMF identifies basis genes that are consistently co-expressed and separates the data into modules that represent different transcriptional programs. The factors derived from NMF were then analyzed to identify those that were recurrent, meaning they appeared consistently across multiple cell lines.
+
+#### 4. How do the identified RHPs relate to in vivo programs of heterogeneity in tumors, and what evidence supports this relationship?
+The identified RHPs reflect in vivo programs of heterogeneity in tumors by capturing critical biological processes and states observed in actual tumor samples. The authors compared the gene expression profiles of the RHPs identified from cell lines to those from actual tumor samples using bulk RNA sequencing and single-cell RNA sequencing data. They found that several RHPs in cell lines were highly similar to heterogeneity programs observed in vivo. 
+
+For example:
+The EpiSen (epithelial senescence-associated) program (RHP 7) identified in cell lines resembled senescence programs found in keratinocytes and lung bronchial cells and was also observed in head and neck squamous cell carcinoma (HNSCC) tumors. This similarity was supported by consistent expression of senescence-associated genes and markers, indicating a shared biological function between cell lines and tumors.
+Also, the computational method (NMF) used to identify RHPs was consistent across different cell lines and tumor types, suggesting that these programs are not artifacts of cell line culture conditions but represent real, recurrent patterns of gene expression found in human tumors.
+        
+#### 5. Where can you download the scRNA-seq data as shown in Figure 1B?
+The data is available at GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157220
+
+
 
 
 
